@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.fondo{
+  background: url('assets/pokemon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+body{
+  margin: 0;
+}
+
+.titulo{
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+}

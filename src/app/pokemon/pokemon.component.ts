@@ -10,8 +10,9 @@ export class PokemonComponent implements OnInit {
 
   nombre!: string
   urlImage!: string
-  tipo!: string
+  id!: string
   modo!: string
+  tipo!: string
 
   constructor(private PokemonService : PokemonService) {}
 
@@ -26,8 +27,9 @@ export class PokemonComponent implements OnInit {
 
   type(){
     this.PokemonService.getPokemon(this.nombre).subscribe((data:any)=>{
-      this.tipo = data.order
-      this.modo = data.abilities[0].ability.name
+      this.id = data.order
+      this.modo = data.abilities[1].ability.name
+      this.tipo = data.types[0].type.name
     })
   }
 }

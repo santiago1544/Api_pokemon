@@ -1,7 +1,34 @@
-Busca tu pokemon
-<input type="text" [(ngModel)]="nombre">
-<button (click)="search()" (click)="type()">Buscar</button>
-<img src="{{urlImage}}" alt="Foto del pokemon">
-<h1>{{tipo}}</h1>
+<div class="container">
+  <span class="titulo">Escribe el nombre de tu pokemon</span>
+   <br>
+  <input type="text" [(ngModel)]="nombre">
+  <button (click)="search()" (click)="type()" style="margin-left: 20px;" class="btn btn-success">Buscar</button>
+  <br>
+  <table class="table table-striped mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Caracteristicas</th>
+        <th scope="col">Resultados</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Id Pokemon</th>
+        <td>{{id}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Tipo</th>
+        <td>{{tipo}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Habilidad principal</th>
+        <td>{{modo}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Imagen</th>
+        <td><img src="{{urlImage}}"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<p>{{modo}}</p>

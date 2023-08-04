@@ -1,0 +1,15 @@
+.imagen{
+  display: flex;
+  background-color: rgba(10, 7, 49, 0.979);
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.centro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
